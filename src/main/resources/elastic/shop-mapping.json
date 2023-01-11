@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "id": {
+      "type": "keyword"
+    },
+    "name": {
+      "type": "keyword"
+    },
+    "branchname": {
+      "type": "text"
+    },
+    "career": {
+      "type": "keyword"
+    },
+    "holiday": {
+      "type": "keyword"
+    },
+    "description": {
+      "type": "text",
+      "analyzer": "zito_analyzer"
+    },
+    "createdAt": {
+      "type": "date",
+      "format": "uuuu-MM-dd'T'HH:mm:ss.SSS||epoch_millis"
+    }
+  }
+}

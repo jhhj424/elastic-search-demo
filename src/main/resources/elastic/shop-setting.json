@@ -1,0 +1,9 @@
+{
+  "analysis": {
+    "analyzer": {
+      "zito_analyzer": {
+        "type": "arirang_analyzer"
+      }
+    }
+  }
+}
