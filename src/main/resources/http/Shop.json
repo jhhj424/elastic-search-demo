@@ -1,0 +1,76 @@
+{
+  "shopSaveRequests": [
+    {
+      "name": "지토 매장",
+      "branchname": "역삼점",
+      "career": 18,
+      "description": "지토 매장 역삼점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "대치점",
+      "career": 3,
+      "description": "지토 매장 대치점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "강남점",
+      "career": 2,
+      "description": "지토 매장 강남점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "홍대점",
+      "career": 5,
+      "description": "지토 매장 홍대점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "상수점",
+      "career": 11,
+      "description": "지토 매장 상수점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "연신내점",
+      "career": 2,
+      "description": "지토 매장 연신내점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "화정점",
+      "career": 7,
+      "description": "지토 매장 화정점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "행신점",
+      "career": 7,
+      "description": "지토 매장 행신점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "건대점",
+      "career": 8,
+      "description": "지토 매장 건대점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "구산점",
+      "career": 13,
+      "description": "지토 매장 구산점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "삼송점",
+      "career": 4,
+      "description": "지토 매장 삼송점 입니다."
+    },
+    {
+      "name": "지토 매장",
+      "branchname": "원흥점",
+      "career": 5,
+      "description": "지토 매장 원흥점 입니다."
+    }
+  ]
+}
