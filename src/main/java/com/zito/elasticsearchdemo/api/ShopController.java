@@ -1,13 +1,15 @@
 package com.zito.elasticsearchdemo.api;
 
+import com.zito.elasticsearchdemo.api.dto.SearchCondition;
+import com.zito.elasticsearchdemo.api.dto.ShopResponse;
 import com.zito.elasticsearchdemo.api.dto.ShopSaveAllRequest;
 import com.zito.elasticsearchdemo.application.ShopService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -15,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class ShopController {
 
     private final ShopService shopService;
-
 
     @PostMapping("/shops")
     public ResponseEntity<Void> saveAll(@RequestBody ShopSaveAllRequest shopSaveAllRequest) {
@@ -29,4 +30,8 @@ public class ShopController {
         return ResponseEntity.ok().build();
     }
 
+    @GetMapping("/shops")
+    public ResponseEntity<List<ShopResponse>> search(SearchCondition searchCondition, Pageable pageable) {
+        return ResponseEntity.ok(shopService.searchByCondition(searchCondition, pageable));
+    }
 }
