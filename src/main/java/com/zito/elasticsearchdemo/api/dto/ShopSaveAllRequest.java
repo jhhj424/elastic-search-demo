@@ -7,5 +7,5 @@ import java.util.List;
 @Getter
 public class ShopSaveAllRequest {
 
-    private List<ShopSaveRequest> shopSaveRequestList;
+    private List<ShopSaveRequest> shopSaveRequests;
 }
