@@ -28,10 +28,10 @@ public class ElasticSearchConfig extends ElasticsearchConfiguration {
                 .build();
     }
 
-    @Component
-    @ConfigurationProperties(prefix = "elasticsearch")
     @Getter
     @Setter
+    @Component
+    @ConfigurationProperties(prefix = "elasticsearch")
     public static class ElasticSearchProperties {
         private String url;
     }

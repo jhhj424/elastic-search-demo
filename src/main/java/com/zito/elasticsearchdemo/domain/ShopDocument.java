@@ -15,8 +15,8 @@ import static org.springframework.data.elasticsearch.annotations.DateFormat.epoc
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Document(indexName = "shop")
-@Mapping(mappingPath = "elastic/shop-mapping.json")
-@Setting(settingPath = "elastic/shop-setting.json")
+@Mapping(mappingPath = "elastic/shop-mappings.json")
+@Setting(settingPath = "elastic/shop-settings.json")
 public class ShopDocument {
 
     @Id
