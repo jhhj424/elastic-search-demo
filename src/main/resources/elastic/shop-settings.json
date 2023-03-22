@@ -1,8 +1,25 @@
 {
-  "analysis": {
-    "analyzer": {
-      "zito_analyzer": {
-        "type": "arirang_analyzer"
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "zito_analyzer": {
+          "tokenizer": "zito_tokenizer",
+          "filter": [
+            "zito_stop_filter"
+          ]
+        }
+      },
+      "tokenizer": {
+        "zito_tokenizer": {
+          "type": "nori_tokenizer",
+          "decompound_mode": "none"
+        }
+      },
+      "filter": {
+        "zito_stop_filter": {
+          "type": "stop",
+          "stopwords": "_korean_"
+        }
       }
     }
   }
